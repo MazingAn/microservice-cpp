@@ -12,3 +12,7 @@ _deps
 out/*
 out
 *cmake-tools*
+docker/mariadb/mariadb/conf/*
+docker/mariadb/mariadb/data/*
+docker/mariadb/mariadb/log/*
+docker/rabbitmq/rabbitmq/*
