@@ -16,3 +16,4 @@ docker/mariadb/mariadb/conf/*
 docker/mariadb/mariadb/data/*
 docker/mariadb/mariadb/log/*
 docker/rabbitmq/rabbitmq/*
+.cache/

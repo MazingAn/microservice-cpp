@@ -3,7 +3,6 @@
 #include "flight_data_parse_worker.h"
 #include "rpc.h"
 #include <iostream>
-#include <ostream>
 #include <string>
 
 int main(int argc, char *argv[]) {

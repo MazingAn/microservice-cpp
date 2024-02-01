@@ -12,7 +12,7 @@ services:
       - RABBITMQ_DEFAULT_USER=admin
       - RABBITMQ_DEFAULT_PASS=admin
     volumes:
-      - $PWD/rabbitmq:var/lib/rabbitmq
+      - $PWD/rabbitmq:/var/lib/rabbitmq
       - $PWD/rabbitmq:/var/log/rabbitmq
     networks:
       - myweb
