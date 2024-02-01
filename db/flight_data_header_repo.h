@@ -2,8 +2,11 @@
 #define FDPP_DB_FLIGHT_DATA_HEADER_REPO_H
 
 #include "base_repo.h"
+#include "conncpp/ResultSet.hpp"
 #include "flight_data_header.h"
+#include <memory>
 #include <string>
+#include <vector>
 
 namespace fddb {
 
@@ -19,6 +22,12 @@ public:
   bool UpdateById(long id, fdmodels::FlightDataHeader newHeader);
   bool RemoveById(long id);
   fdmodels::FlightDataHeader QueryById(long id);
+  std::vector<fdmodels::FlightDataHeader>
+  QueryAndOrder(int page_index, int page_size, std::string order);
+
+private:
+  void SqlToModel(std::shared_ptr<sql::ResultSet> res,
+                  fdmodels::FlightDataHeader &header);
 };
 } // namespace fddb
 #endif // !FDPP_DB_FLIGHT_DATA_HEADER_REPO_H
