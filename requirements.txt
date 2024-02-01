@@ -1,0 +1,6 @@
+- restclient-cpp https://github.com/mrtazz/restclient-cpp
+- rapidjson https://github.com/Tencent/rapidjson/
+- mariadb-connector-cpp https://github.com/mariadb-corporation/mariadb-connector-cpp 
+- rabbitmq-c  https://github.com/alanxz/rabbitmq-c
+
+you may download those libs and build them then put the .so(linux) .a .dll(windows) .dylib(macos) on lib folder.
