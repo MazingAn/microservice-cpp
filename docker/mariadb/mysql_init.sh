@@ -21,5 +21,4 @@ tee $PWD/mariadb/conf/my.cnf <<-'EOF'
 	default-character-set=utf8mb4
 	[mysql]
 	default-character-set=utf8mb4
-
 EOF
