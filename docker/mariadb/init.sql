@@ -1,6 +1,9 @@
 CREATE DATABASE IF NOT EXISTS fdpp; 
-CREATE TABLE IF NOT EXISTS `fdpp.flightdataheader` (
-  `id` int(11) NOT NULL,
+
+USE fdpp;
+
+CREATE TABLE IF NOT EXISTS `flightdataheader` (
+  `id` bigint NOT NULL,
   `aircraft_number` varchar(32) DEFAULT NULL,
   `aircraft_type` varchar(32) DEFAULT NULL,
   `fcd_type` varchar(32) DEFAULT NULL,
