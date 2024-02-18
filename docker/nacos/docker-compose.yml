@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  nacos:
+    image: nacos/nacos-server
+    ports:
+      - 8848:8848/tcp
+      - 9848:9848/tcp
+    container_name: "nacos"
+    environment:
+      - PREFER_HOST_MODE=hostname
+      - MODE=standalone
+    env_file:
+      - $PWD/nacos/env/nacos.env 
+    volumes:
+      - $PWD/nacos/log/:/home/nacos/logs
+      - $PWD/nacos/conf/application.properties:/home/nacos/conf/application.properties
+    networks:
+      - myweb
+
+networks:
+  myweb:
+    driver: bridge

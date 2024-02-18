@@ -15,5 +15,7 @@ out
 docker/mariadb/mariadb/conf/*
 docker/mariadb/mariadb/data/*
 docker/mariadb/mariadb/log/*
+docker/mysql/mysql57/*
 docker/rabbitmq/rabbitmq/*
+docker/nacos/nacos/*
 .cache/
