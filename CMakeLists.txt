@@ -12,6 +12,7 @@ add_subdirectory(db)
 add_subdirectory(dc)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
+include_directories(${PROJECT_SOURCE_DIR}/include/nacos)
 include_directories(${PROJECT_SOURCE_DIR}/helpers)
 include_directories(${PROJECT_SOURCE_DIR}/rpc)
 include_directories(${PROJECT_SOURCE_DIR}/models)

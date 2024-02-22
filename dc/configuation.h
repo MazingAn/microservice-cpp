@@ -7,6 +7,6 @@
  * Description: the utils to get configuration from nacos server
  * ***/
 
-#include "nacos/Nacos.h"
+#include "Nacos.h"
 
 #endif // !FDPP_DC_CONFIGURATION

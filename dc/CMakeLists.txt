@@ -4,7 +4,7 @@ project(dc)
 
 set(CMAKE_CXX_STANDARD 11)
 
-include_directories(${PROJECT_SOURCE_DIR}/../include)
+include_directories(${PROJECT_SOURCE_DIR}/../include/nacos)
 
 aux_source_directory(. SRC)
 
